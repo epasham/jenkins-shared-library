@@ -31,3 +31,8 @@ repositories {
     // Spock snapshots are available from the Sonatype OSS snapshot repository
     maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
 }
+
+sourceSets {
+  main.groovy.srcDirs = ['src/']
+  test.groovy.srcDirs = ['test/']
+}
