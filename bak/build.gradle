@@ -11,11 +11,6 @@ plugins {
     id 'groovy'
 }
 
-group 'ejsl'
-description = "Jenkins Pipeline Utils"
-version '1.0-SNAPSHOT'
-
-
 dependencies {
     // Use the latest Groovy version for building this library
     compile 'org.codehaus.groovy:groovy-all:2.4.15'
@@ -26,8 +21,7 @@ dependencies {
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-  // Spock releases are available from Maven Central
-    mavenCentral()
-    // Spock snapshots are available from the Sonatype OSS snapshot repository
-    maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
 }
